@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdNova | Previous Generation Ad Tech is Burning Your Money</title>
+    <meta
+      name="description"
+      content="AI-Driven Ad Tech for the modern investor. Precision, efficiency, and scale."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+      <div class="logo">Pasar</div>
+      <div class="nav-links">
+        <a href="#problem">The Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#market">Market</a>
+        <a href="#contact" class="cta-button smooth-scroll">Contact us</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+      <canvas id="particle-network"></canvas>
+      <div class="hero-content">
+        <h1>
+          Welcome <span class="gradient-text">A</span>ngle
+          <span class="gradient-text">I</span>nvestors, 
+        </h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 class="hero-title">
+          Join the <span class="gradient-text">AdTech Revolution</span>
+        </h1>
+        <p class="hero-subtitle">
+          Stop guessing. Invest today. Shape tomorrow. 
+        </p>
+        <p class="hero-description">
+          We are building a unified AdTech platform designed to revolutionize ad
+          optimization and unlock individual, business and service needs. By
+          combining cutting edge technology, AI and Voice driven insights, and a
+          seamless makrketplace experience, we are shaping how advertising
+          delivers value in the digital economy.
+        </p>
+
+        <br />
+        <br />
+
+        <!-- <div class="hero-actions">
+          <a href="#contact" class="primary-btn pulse"
+            >Request Investment Deck</a
+          >
+          <a href="#solution" class="secondary-btn">How it Works</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Explore</span>
+        <div class="arrow-down"></div>
+      </div> -->
+    </header>
+
+    <main>
+      <section id="problem" class="section problem-section">
+        <div class="container" style="padding-top: 160px;">
+          <h2 class="section-title">
+            <span class="danger-text">The Problem</span>
+          </h2>
+          <div class="problem-grid">
+            <div class="card glass-card fade-in">
+              <!-- <div class="icon-box">💸</div> -->
+              <h3>No affordable platform</h3>
+              <p>
+                No affordable, unified platform exists to list goods and
+                services
+              </p>
+            </div>
+            <div class="card glass-card fade-in" style="transition-delay: 0.2s">
+              <!-- <div class="icon-box">📉</div> -->
+              <h3>Fragmented Options</h3>
+              <p>
+                Consumers face difficulty in reselling pre-owned goods due to
+                fragmented options.
+              </p>
+            </div>
+            <div class="card glass-card fade-in" style="transition-delay: 0.4s">
+              <!-- <div class="icon-box">🧩</div> -->
+              <h3>Struggle to clear surplus Stock</h3>
+              <p>
+                Retail shops and mid-scale businesses struggle to clear surplus
+                stock efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Solution -->
+      <section id="solution" class="section solution-section">
+        <div class="container" style="padding-top:160px;">
+          <h2 class="section-title">
+            <span class="gradient-text">Solution</span>
+          </h2>
+          <div class="solution-content">
+            <div class="solution-text">
+              <h3>Seamless connect</h3>
+              <p>Unified platform for both inviduals and businesses</p>
+              <ul class="feature-list">
+                <li>Quick listings</li>
+                <li>Pre-owned goods</li>
+                <li>Stock clearance</li>
+              </ul>
+            </div>
+            <div class="solution-visual">
+              <!-- Abstract Data Flow Animation Placeholder -->
+              <div class="data-flow-visual"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Market Data -->
+      <section id="market" class="section market-section">
+        <div class="container" style="padding-top: 80px;">
+          <h2 class="section-title">
+            Market <span class="accent-text">Opportunity</span>
+          </h2>
+          <div class="chart-container glass-card">
+            <!-- JS will render a chart here -->
+            <canvas id="market-chart"></canvas>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number" data-target="2.7">0</span>
+              USD B+
+              <span class="stat-label">Total Addressable Market</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="12">0</span>%
+              <span class="stat-label">YoY Sector Growth</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact/CTA -->
+      <section id="contact" class="section contact-section">
+        <div class="container small-container">
+          <div class="cta-card glass-card glow-border">
+            <h2>Join the Revolution</h2>
+            
+            <form class="contact-form" id="contact-form">
+              <div class="form-grid">
+                <div class="input-wrapper">
+                  <input type="text" id="name" placeholder="Name" required />
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" id="profession" placeholder="Profession" required />
+                </div>
+                <div class="input-wrapper">
+                  <input type="email" id="email" placeholder="Email" required />
+                </div>
+                <div class="input-wrapper">
+                  <div class="phone-group">
+                    <input
+                      type="text"
+                      id="country-code"
+                      placeholder="+91"
+                      class="country-code"
+                      required
+                    />
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="Phone Number"
+                      class="phone-number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="input-wrapper full-width">
+                  <input type="url" id="linkedin" placeholder="LinkedIn Profile URL" />
+                </div>
+                <div class="input-wrapper full-width">
+                  <select id="investment" required>
+                    <option value="" disabled selected>
+                      Investment Amount
+                    </option>
+                    <option value="USD 175K">USD 175K</option>
+                    <option value="USD 350K">USD 350K</option>
+                    <option value="USD 525K">USD 525K</option>
+                  </select>
+                </div>
+                <div class="input-wrapper full-width">
+                  <button type="submit" class="primary-btn submit-btn">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>&copy; 2026 </p>
+        
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

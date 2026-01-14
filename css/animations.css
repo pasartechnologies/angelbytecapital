@@ -1,0 +1,34 @@
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 var(--glow-primary); }
+    70% { box-shadow: 0 0 0 15px rgba(79, 172, 254, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(79, 172, 254, 0); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pulse {
+    animation: pulse-glow 2s infinite;
+}
+
+.fade-in {
+    opacity: 0; /* Hidden by default, JS will add class to trigger */
+}
+
+.fade-in.visible {
+    animation: fadeInUp 0.8s ease forwards;
+}
