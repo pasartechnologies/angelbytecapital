@@ -198,11 +198,11 @@ if (contactForm) {
     const linkedin = document.getElementById("linkedin").value;
     const investment = document.getElementById("investment").value;
 
-    const subject = "Expression of Interest in Investing in PASAR";
+    const subject = "Expression of Interest in Investing in AdTech";
 
     const body = `Dear Sir/Madam,
 
-I am writing to formally express my interest in exploring investment opportunities with your company. The vision of building a unified AdTech marketplace that addresses inefficiencies, fraud, and fragmented advertising platforms is compelling, and I believe PASAR has strong potential in the evolving digital economy.
+I am writing to formally express my interest in exploring investment opportunities with your company. The vision of building a unified AdTech marketplace that addresses inefficiencies, fraud, and fragmented advertising platforms is compelling, and I believe AdTech has strong potential in the evolving digital economy.
 
 Please find my details below:
 
