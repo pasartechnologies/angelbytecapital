@@ -195,6 +195,130 @@
       }
 
 
+       .solution-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .solution-text h3 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      .solution-text p {
+        color: var(--text-grey);
+        font-size: clamp(0.95rem, 2vw, 1.1rem);
+      }
+
+      .feature-list {
+        list-style: none;
+        margin-top: 30px;
+      }
+
+      .feature-list li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-size: clamp(0.95rem, 2vw, 1.1rem);
+        color: var(--text-grey);
+      }
+
+      .feature-list li::before {
+        content: "✓";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+        border-radius: 50%;
+        margin-right: 15px;
+        color: var(--bg-dark);
+        font-weight: bold;
+        font-size: 0.8rem;
+        flex-shrink: 0;
+      }
+
+      .data-flow-visual {
+        width: 100%;
+        height: 400px;
+        background: radial-gradient(circle at center, rgba(79, 172, 254, 0.1) 0%, transparent 70%);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .data-flow-visual::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(45deg, var(--primary-start), var(--accent-end));
+        filter: blur(40px);
+        opacity: 0.5;
+        animation: pulse 4s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); }
+        50% { transform: translate(-50%, -50%) scale(1.2); }
+      }
+
+      /* Market Section */
+      .chart-container {
+        height: 400px;
+        margin-bottom: 50px;
+        position: relative;
+        padding: 20px;
+      }
+
+      #market-chart {
+        width: 100%;
+        height: 100%;
+      }
+
+      .stats-grid {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        display: block;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+        background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .stat-label {
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        color: var(--text-grey);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-top: 5px;
+      }
+
+
+
       @media (max-width: 768px) {
         .glass-nav {
           padding: 15px 20px;
@@ -248,6 +372,7 @@
 
         .section {
           padding: 60px 0;
+
         }
 
         .problem-grid {
@@ -374,7 +499,7 @@
       <section id="problem" class="section problem-section">
         <div class="container" style="padding-top: 160px;">
           <h2 class="section-title">
-            <span class="danger-text">The Problem</span>
+            <span class="danger-text" style="font-size: clamp(1.5rem, 4vw, 4rem); ">The Problem</span>
           </h2>
           <div class="problem-grid">
             <div class="card glass-card fade-in">
@@ -409,7 +534,7 @@
       <section id="solution" class="section solution-section">
         <div class="container" style="padding-top:160px;">
           <h2 class="section-title">
-            <span class="gradient-text">Solution</span>
+            <span class="gradient-text" style="font-size: clamp(1.5rem, 4vw, 4rem); ">Solution</span>
           </h2>
           <div class="solution-content">
             <div class="solution-text">
@@ -422,8 +547,17 @@
               </ul>
             </div>
             <div class="solution-visual">
-              <!-- Abstract Data Flow Animation Placeholder -->
-              <div class="data-flow-visual"></div>
+              <div class="data-flow-visual" style="display: flex; align-items: center; justify-content: center">
+  <h1 style="font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 800; display: flex; align-items: center; gap: 12px; justify-content: center;">
+    
+    <span style="color: #4facfe;">AI</span> 
+    
+    <span style="color: #ffffff;">&</span> 
+    
+    <span  style="font-size: inherit; color: #00f2fe;">Voice Enabled</span>
+    
+  </h1>
+</div>
             </div>
           </div>
         </div>
@@ -432,7 +566,7 @@
       <!-- Market Data -->
       <section id="market" class="section market-section">
         <div class="container" style="padding-top: 80px;">
-          <h2 class="section-title">
+          <h2 class="section-title" style="font-size: clamp(1.5rem, 4vw, 4rem); ">
             Market <span class="accent-text">Opportunity</span>
           </h2>
           <div class="chart-container glass-card">
@@ -457,7 +591,7 @@
       <section id="contact" class="section contact-section">
         <div class="container small-container">
           <div class="cta-card glass-card glow-border">
-            <h2>Join the Revolution</h2>
+            <h2>Contact Us :</h2>
             
             <form class="contact-form" id="contact-form">
               <div class="form-grid">

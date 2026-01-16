@@ -401,7 +401,7 @@ body {
 }
 
 #market {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Add a pseudo-element for a visual effect in the data flow box */
